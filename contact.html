@@ -15,3 +15,80 @@
 
 		<br>
 	<hr width="50%">
+	<br>
+	<form method ="POST" action = "" enctype = "utf-8">
+		<tr>
+			<td>
+				<label for="fName">First Name</label>&nbsp;&nbsp;
+		<input type = "text" id = "fName" name = "fName"
+           pattern="[a-z]" title="Enter 4 to 8 letters">
+           <span class="validity"></span><br><br>
+
+			</td>
+		</tr>
+		<tr>
+		<td>
+			<label for="sName">Surname Name</label>&nbsp;&nbsp;
+			<input type = "text" id = "sName" name = "sName"required size="20"
+           pattern="[a-z]" title="Enter 4 to 8 letters" >
+           <span class="validity"></span> <br><br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="age">Age</label>&nbsp;&nbsp;
+			<input type = "text" id = "age" name = "age"required size="2"
+           pattern="1,2,3" title="Enter your actual age" >
+           <span class="validity"></span> <br><br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="pass">Password</label>&nbsp;&nbsp;
+			<input type = "Password" id = "pass" name = "Password" minlength="8" required >
+           <span class="validity"></span> <br><br>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<label for="phone">Phone number</label>&nbsp;&nbsp;
+			<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code" size="2"/>-
+   <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit prefix" size="2"/> - 
+   <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" aria-label="4-digit number" size="3"/>
+ </label> <br><br>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+		<label for = "e-mail">E-mail</label>&nbsp;&nbsp;
+			<input type="e-mail" id = "e-mail" name = "e-mail" required>
+		</td>
+	</tr>
+			
+			<tr>
+			<td>
+				<br>
+				<br>
+			Country
+			<select name = "country" id= "">&nbsp;&nbsp;
+				<option value="As">Asia</option>
+				<option value="Af">Africa</option>
+				<option value="Am">America</option>
+			</select>
+		</td>
+	</tr>
+			<tr>
+			<td>
+				<br>
+				<br>
+			Leave a suggestion!<br><br>
+			<textarea name="comment" placeholder="Your site is amazing" rows="7" cols="35"></textarea>
+			<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<input type = "Submit" value = "Submit">
+			<br><br>
+		</td>
+	</tr>
+	</form>
+</table>
